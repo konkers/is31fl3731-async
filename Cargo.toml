@@ -1,5 +1,5 @@
-[package] 
-name = "is31fl3731"
+[package]
+name = "is31fl3731-async"
 version = "1.0.2"
 edition = "2021"
 authors = ["Matt Gleich"]
@@ -10,10 +10,7 @@ repository = "https://github.com/gleich/is31fl3731"
 readme = "README.md"
 
 [dependencies]
-embedded-hal = "0.2.6"
-
-[dev-dependencies]
-rppal = {version = "0.13.1", features = ["hal"]}
+embedded-hal-async = "1.0.0"
 
 [features]
 charlie_bonnet = []
@@ -23,7 +20,3 @@ led_shim = []
 matrix = []
 rgb_matrix_5x5 = []
 scroll_phat_hd = []
-
-[[example]]
-name = "rpi"
-required-features = ["charlie_bonnet"]
